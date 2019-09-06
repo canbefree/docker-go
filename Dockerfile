@@ -49,6 +49,7 @@ RUN apt-get update \
     honnef.co/go/tools/... \
     github.com/golangci/golangci-lint/cmd/golangci-lint \
     github.com/mgechev/revive \
+    golang.org/x/tools/go/buildutil \
     github.com/derekparker/delve/cmd/dlv 2>&1 \
     #
     # Create a non-root user to use if preferred - see https://aka.ms/vscode-remote/containers/non-root-user.
