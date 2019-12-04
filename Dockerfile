@@ -66,5 +66,3 @@ RUN apt-get update \
     && apt-get autoremove -y \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/*
-
-RUN cd /go/src/golang.org/x/tools; git pull --ff-only

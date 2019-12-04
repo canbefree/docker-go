@@ -17,7 +17,7 @@
 ### 添加标签
 
 ```bash
-    git tag -a release-v1.0.0 -m "Update ...."
+    git tag -a release-v1.0.5 -m "Update ...."
     git push origin --tags
 ```
 
@@ -25,11 +25,11 @@
 
 ```bash
 # 删除本地
-git tag -d release-v1.0.0
+git tag -d release-v1.0.5
 #删除远程的
-git push origin :refs/tags/release-v1.0.0
+git push origin :refs/tags/release-v1.0.5
 ```
 
 ### 镜像地址
 
-- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.0.0
+- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.0.5
