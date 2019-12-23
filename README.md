@@ -8,6 +8,7 @@
 | 1.0.1 | 支持 buildgo | |
 | 1.0.2 | goconvery mysql | |
 | 1.0.6 | remote development| go本地开发| 
+| 1.0.7 | remote development| new version| 
 
 ## 阿里云自动构建过程
 
@@ -18,7 +19,7 @@
 ### 添加标签
 
 ```bash
-    git tag -a release-v1.0.6 -m "Update ...."
+    git tag -a release-v1.0.7 -m "Update ...."
     git push origin --tags
 ```
 
