@@ -70,5 +70,13 @@ RUN apt-get update \
     && apt-get clean -y \
     && rm -rf /var/lib/apt/lists/* /go/src
 
+# etcd 
+
+RUN go get -u -v \
+        go.etcd.io/etcd \
+        go.etcd.io/etcdctl
+
+RUN export GOPROXY=https://goproxy.cn
+
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog

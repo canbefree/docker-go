@@ -9,6 +9,7 @@
 | 1.0.2 | goconvery mysql | |
 | 1.0.6 | remote development| go本地开发| 
 | 1.0.8 | remote development| new version | 
+| 1.0.9 | remote development| go 支持etcd | 
 
 ## 阿里云自动构建过程
 
