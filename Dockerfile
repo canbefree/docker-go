@@ -71,9 +71,10 @@ RUN apt-get update \
 
 # etcd 
 
-RUN go get -u -v \
-        go.etcd.io/etcd \
-        go.etcd.io/etcdctl
+RUN go get -u -v go.etcd.io/etcd 
+
+RUN go get -u -v go.etcd.io/etcd/etcdctl
+        
 
 RUN export GOPROXY=https://goproxy.cn
 
