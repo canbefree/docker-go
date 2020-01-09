@@ -75,8 +75,7 @@ RUN go get -u -v go.etcd.io/etcd
 
 RUN go get -u -v go.etcd.io/etcd/etcdctl
         
-
-RUN export GOPROXY=https://goproxy.cn
+ENV GOPROXY=https://goproxy.cn
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=dialog

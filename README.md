@@ -20,7 +20,7 @@
 ### 添加标签
 
 ```bash
-    git tag -a release-v1.0.8 -m "Update ...."
+    git tag -a release-v1.1.0 -m "Update ...."
     git push origin --tags
 ```
 
