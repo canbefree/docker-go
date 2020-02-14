@@ -4,7 +4,7 @@
 
 | 版本号        | 详情         | 备注  |
 | ------------- |:-------------:| -----:|
-| 1.1.0 | remote development | export GOPROXY=https://goproxy.cn |
+| 1.1.2 | remote development | export GOPROXY=https://goproxy.cn |
 
 ## 阿里云自动构建过程
 
@@ -30,7 +30,7 @@ git push origin :refs/tags/release-v1.0.5
 
 ### 镜像地址
 
-- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.0.5
+- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.1.2
 
 ### 修改日志
 
