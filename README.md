@@ -4,7 +4,7 @@
 
 | 版本号        | 详情         | 备注  |
 | ------------- |:-------------:| -----:|
-| 1.1.2 | remote development | export GOPROXY=https://goproxy.cn |
+| 1.1.3 | remote development | export GOPROXY=https://goproxy.cn |
 
 ## 阿里云自动构建过程
 
@@ -15,7 +15,7 @@
 ### 添加标签
 
 ```bash
-    git tag -a release-v1.1.0 -m "Update ...."
+    git tag -a release-v1.1.3 -m "Update ...."
     git push origin --tags
 ```
 
