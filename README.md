@@ -4,12 +4,7 @@
 
 | 版本号        | 详情         | 备注  |
 | ------------- |:-------------:| -----:|
-| 1.0.0     | go |  vscode本地开发版本 |
-| 1.0.1 | 支持 buildgo | |
-| 1.0.2 | goconvery mysql | |
-| 1.0.6 | remote development| go本地开发|  
-| 1.0.8 | remote development| new version |  
-| 1.0.9 | remote development| go 支持etcd |  
+| 1.1.0 | remote development | export GOPROXY=https://goproxy.cn |
 
 ## 阿里云自动构建过程
 
@@ -36,3 +31,7 @@ git push origin :refs/tags/release-v1.0.5
 ### 镜像地址
 
 - registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.0.5
+
+### 修改日志
+
+vscode 更新升级 1.1.0 版本
