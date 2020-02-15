@@ -6,7 +6,7 @@
 
 | 版本号        | 详情         | 备注  |
 | ------------- |:-------------:| -----:|
-| 1.1.5 | remote development | export GOPROXY=https://goproxy.cn |
+| 1.1.6 | remote development | export GOPROXY=https://goproxy.cn |
 
 ## 阿里云自动构建过程
 
