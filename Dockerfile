@@ -18,7 +18,6 @@ ARG USER_GID=$USER_UID
 
 ARG PROTOBUF_VERSION=3.11.4
 
-
 # Configure apt, install packages and tools
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog autoconf automake libtool 2>&1 \
@@ -81,9 +80,9 @@ RUN apt-get update \
 
 
 # install protobuf
-RUN wget https://github.com/protocolbuffers/protobuf/releases/download/${PROTOBUF_VERSION}/protobuf-all-${PROTOBUF_VERSION}.tar.gz \
-    && tar xvfz protobuf-all-${PROTOBUF_VERSION}.tar.gz \
-    && cd protobuf-all-${PROTOBUF_VERSION} \
+RUN wget https://github.com/protocolbuffers/protobuf/releases/download/3.11.4/protobuf-all-3.11.4.tar.gz \
+    && tar xvfz protobuf-all-3.11.4.tar.gz \
+    && cd protobuf-all-3.11.4 \
     && ./configure \
     && make \
     && make install \
