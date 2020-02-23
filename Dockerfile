@@ -82,7 +82,7 @@ RUN apt-get update \
 # install protobuf
 RUN wget https://github.com/protocolbuffers/protobuf/releases/download/v3.11.4/protobuf-all-3.11.4.tar.gz \
     && tar xvfz protobuf-all-3.11.4.tar.gz \
-    && cd protobuf-all-3.11.4 \
+    && cd protobuf-3.11.4 \
     && ./configure \
     && make \
     && make install \
