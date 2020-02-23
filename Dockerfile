@@ -16,6 +16,9 @@ ARG USERNAME=vscode
 ARG USER_UID=1000
 ARG USER_GID=$USER_UID
 
+ARG PROTOBUF_VERSION=3.11.4
+
+
 # Configure apt, install packages and tools
 RUN apt-get update \
     && apt-get -y install --no-install-recommends apt-utils dialog autoconf automake libtool 2>&1 \
