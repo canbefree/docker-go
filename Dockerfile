@@ -78,7 +78,7 @@ RUN apt-get update \
 
 
 # install protobuf
-RUN wget https://github.com/protocolbuffers/protobuf/releases/download/{PROTOBUF_VERSION}/protobuf-all-${PROTOBUF_VERSION}.tar.gz \
+RUN wget https://github.com/protocolbuffers/protobuf/releases/download/${PROTOBUF_VERSION}/protobuf-all-${PROTOBUF_VERSION}.tar.gz \
     && tar xvfz protobuf-all-${PROTOBUF_VERSION}.tar.gz \
     && cd protobuf-all-${PROTOBUF_VERSION} \
     && ./configure \

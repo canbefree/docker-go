@@ -8,7 +8,7 @@
 | ------------- |:-------------:| -----:|
 | 1.1.6 | remote development | export GOPROXY=https://goproxy.cn |
 | 1.1.7 | remote development | add autoconf automake libtool |
-| 1.1.8 | remote development | add autoconf automake libtool  protobuf |
+| 1.2.1 | remote development | add autoconf automake libtool  protobuf |
 
 ## 阿里云自动构建过程
 
