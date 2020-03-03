@@ -1,7 +1,7 @@
 ﻿<!--
  * @Author: your name
  * @Date: 2020-02-27 12:42:45
- * @LastEditTime: 2020-03-03 15:22:04
+ * @LastEditTime: 2020-03-03 16:21:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \docker-go\README.md
@@ -15,7 +15,7 @@
 | 版本号        | 详情         | 备注  |
 | ------------- |:-------------:| -----:|
 | 1.2.5 | remote development | add autoconf automake libtool  protobuf |
-| 1.2.6 | graphviz | go mod 依赖
+| 1.2.7 | graphviz | go mod 依赖
 
 ## 阿里云自动构建过程
 

@@ -25,7 +25,7 @@ RUN apt-get update \
     # Verify git, process tools, lsb-release (common in install instructions for CLIs) installed
     && apt-get -y install git openssh-client iproute2 procps lsb-release \
 
-    && apt-get -y graphviz \
+    && apt-get -y install graphviz \
     #
     # Install Go tools w/module support
     && mkdir -p /tmp/gotools \
