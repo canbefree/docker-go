@@ -1,4 +1,12 @@
-﻿# DOCKER-GO
+﻿<!--
+ * @Author: your name
+ * @Date: 2020-02-27 12:42:45
+ * @LastEditTime: 2020-03-03 15:22:04
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \docker-go\README.md
+ -->
+# DOCKER-GO
 
 ![](https://img.shields.io/static/v1?label=vscode&message=go&color=yellow)
 
@@ -6,9 +14,8 @@
 
 | 版本号        | 详情         | 备注  |
 | ------------- |:-------------:| -----:|
-| 1.1.6 | remote development | export GOPROXY=https://goproxy.cn |
-| 1.1.7 | remote development | add autoconf automake libtool |
-| 1.2.1 | remote development | add autoconf automake libtool  protobuf |
+| 1.2.5 | remote development | add autoconf automake libtool  protobuf |
+| 1.2.6 | graphviz | go mod 依赖
 
 ## 阿里云自动构建过程
 
