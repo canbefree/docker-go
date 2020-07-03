@@ -1,5 +1,6 @@
 version: "3"
 services:
+  # docker-go
   docker-go:
     container_name: docker-go
     build:
@@ -10,10 +11,17 @@ services:
     command: sleep infinity 
     networks:
       - app_net
+  # mariadb
   mariadb:
-    image: mariadb
-    networks: 
-      - app_net
+        image: mariadb
+        container_name: mariadb
+        privileged: true
+        ports:
+            - "3306:3306"
+        environment:
+            - MYSQL_ROOT_PASSWORD=123456
+        networks:
+            - app_net
 networks:
     app_net:
         external: true
