@@ -1,28 +1,38 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.112.0/containers/go
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
+// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/go
 {
 	"name": "Go",
-	"dockerFile": "Dockerfile",
-	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
-
-	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash",
-		"go.gopath": "/go",
-		"go.testFlags": [ "-v "]
-	},
-	
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"ms-vscode.go"
-	]
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
+	// "dockerFile": "Dockerfile",
+	"dockerComposeFile": "docker-compose.yml",
+	"workspaceFolder": "/workspace",
+	"service": "docker-go",
+	"runArgs": [
+		// Uncomment the next line to use a non-root user. See https://aka.ms/vscode-remote/containers/non-root-user.
+		// "-u", "1000",
+		"--cap-add=SYS_PTRACE",
+		"--security-opt",
+		"seccomp=unconfined"
+	],
+	// Uncomment the next line if you want to publish any ports.
+	"appPort": [
+		// "9200:8080"
+	],
+	// Uncomment the next line to run commands after the container is created.
 	// "postCreateCommand": "go version",
-
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "vscode"
+	// Uncomment the next line to use a non-root user. See https://aka.ms/vscode-remote/containers/non-root-user.
+	// "runArgs": [ "-u", "1000" ],
+	"extensions": [
+		"ms-vscode.go",
+		"plex.vscode-protolint",
+		"zxh404.vscode-proto3"
+	],
+	"settings": {
+		"go.gopath": "/go",
+		"terminal.integrated.shell.linux": "/bin/bash",
+		"go.testFlags": [
+			"-count=1",
+			"-v"
+		],
+		"editor.formatOnSave": true
+	}
 }

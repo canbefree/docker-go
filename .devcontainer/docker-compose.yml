@@ -1,0 +1,19 @@
+version: "3"
+services:
+  docker-go:
+    container_name: docker-go
+    build:
+      context: ./
+    volumes:
+      - ..:/workspace
+    privileged: true
+    command: sleep infinity 
+    networks:
+      - app_net
+  mariadb:
+    image: mariadb
+    networks: 
+      - app_net
+networks:
+    app_net:
+        external: true
