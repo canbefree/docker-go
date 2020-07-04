@@ -7,7 +7,7 @@ RUN git config --global user.name "canbefree" \
 # RUN mkdir /root/.ssh
 COPY .ssh /root/.ssh
 
-RUN  chmod -R 600 /root/.ss
+RUN  chmod -R 600 /root/.ssh
 
 RUN ldconfig
 
