@@ -2,4 +2,5 @@
 .devcontainer/.ssh/id_rsa.pub
 .devcontainer/.ssh/config
 .devcontainer/.ssh/known_hosts
-learn-go-with-tests
+learn-go-with-test
+go-medusa
