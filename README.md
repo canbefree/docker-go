@@ -12,11 +12,7 @@
 
 ## 版本详情
 
-| 版本号        | 详情         | 备注  |
-| ------------- |:-------------:| -----:|
-| 1.2.5 | remote development | add autoconf automake libtool  protobuf |
-| 1.2.7 | graphviz | go mod 依赖 |
-| 1.2.8 | clang-format | proto 格式化工具  |
+last_release : v1.3.4
 
 ## 阿里云自动构建过程
 
