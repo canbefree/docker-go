@@ -1,12 +1,4 @@
-﻿<!--
- * @Author: your name
- * @Date: 2020-02-27 12:42:45
- * @LastEditTime: 2020-03-03 16:21:01
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: \docker-go\README.md
- -->
-# DOCKER-GO
+﻿# DOCKER-GO
 
 ![](https://img.shields.io/static/v1?label=vscode&message=go&color=yellow)
 
@@ -23,7 +15,7 @@ last_release : v1.3.4
 #### 添加标签
 
 ```bash
-    git tag -a release-v1.1.5 -m "Update ...."
+    git tag -a release-v1.3.4 -m "Update ...."
     git push origin --tags
 ```
 

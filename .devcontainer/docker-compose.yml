@@ -5,10 +5,10 @@ services:
     container_name: docker-go
     build:
       context: ./
-    volumes:
-      - ..:/workspace
     privileged: true
     command: sleep infinity 
+    volumes: 
+      - "vdatago:/workspace"
     networks:
       - app_net
   # mariadb
@@ -28,7 +28,11 @@ services:
         privileged:  true
         networks: 
             - app_net
-            
+  
 networks:
     app_net:
         external: true
+
+volumes:
+    vdatago: 
+      name: vdatago

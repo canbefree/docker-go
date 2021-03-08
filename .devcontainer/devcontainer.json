@@ -24,9 +24,6 @@
 	"extensions": [
 		"golang.go",
 		"ms-vscode.go",
-		"plex.vscode-protolint",
-		"zxh404.vscode-proto3",
-		"bierner.markdown-mermaid"
 	],
 	"settings": {
 		"go.gopath": "/go",
