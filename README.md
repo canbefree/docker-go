@@ -4,8 +4,7 @@
 
 ## 版本详情
 
-last_release : v1.3.4
-
+last_release : v1.3.5
 ## 阿里云自动构建过程
 
 #### 阿里云添加镜像
@@ -15,7 +14,7 @@ last_release : v1.3.4
 #### 添加标签
 
 ```bash
-    git tag -a release-v1.3.4 -m "Update ...."
+    git tag -a release-v1.3.5 -m "Update ...."
     git push origin --tags
 ```
 
@@ -23,17 +22,22 @@ last_release : v1.3.4
 
 ```bash
 # 删除本地
-git tag -d release-v1.1.5
+git tag -d release-v1.3.5
 #删除远程的
-git push origin :refs/tags/release-v1.1.5
+git push origin :refs/tags/release-v1.3.5
 ```
 
 ## 镜像地址
 
-- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.1.5
+- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.3.5
 
 ---
 
 ## 问题
 
-- [ ] gopkgs升级 github.com/uudashr/gopkgs/cmd/gopkgs@latest issue
+- [ ] gopkgs升级 github.com/uudashr/gopkgs/cmd/gopkgs@latest issueA
+
+
+
+## 工作区 volumes备份
+- 建议使用镜像备份的方式
