@@ -4,7 +4,7 @@
 
 ## 版本详情
 
-last_release : v1.3.6
+last_release : v1.3.8
 ## 阿里云自动构建过程
 
 #### 阿里云添加镜像
@@ -14,7 +14,7 @@ last_release : v1.3.6
 #### 添加标签
 
 ```bash
-    git tag -a release-v1.3.6 -m "Update ...."
+    git tag -a release-v1.3.8 -m "Update ...."
     git push origin --tags
 ```
 
@@ -22,14 +22,14 @@ last_release : v1.3.6
 
 ```bash
 # 删除本地
-git tag -d release-v1.3.6
+git tag -d release-v1.3.8
 #删除远程的
-git push origin :refs/tags/release-v1.3.6
+git push origin :refs/tags/release-v1.3.8
 ```
 
 ## 镜像地址
 
-- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.3.6
+- registry.cn-shenzhen.aliyuncs.com/canbefree/docker-go:1.3.8
 
 ---
 
