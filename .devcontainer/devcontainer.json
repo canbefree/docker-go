@@ -33,5 +33,5 @@
 		],
 		"editor.formatOnSave": true
 	},
-	"remoteUser": "vscode"
+	// "remoteUser": "vscode"
 }
