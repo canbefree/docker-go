@@ -22,8 +22,7 @@
 	// Uncomment the next line to use a non-root user. See https://aka.ms/vscode-remote/containers/non-root-user.
 	// "runArgs": [ "-u", "1000" ],
 	"extensions": [
-		"golang.go",
-		"ms-vscode.go",
+		"golang.Go"
 	],
 	"settings": {
 		"go.gopath": "/go",
@@ -33,5 +32,6 @@
 			"-v"
 		],
 		"editor.formatOnSave": true
-	}
+	},
+	"remoteUser": "vscode"
 }
