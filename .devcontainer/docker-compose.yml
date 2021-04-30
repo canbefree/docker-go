@@ -9,7 +9,7 @@ services:
     command: sleep infinity 
     volumes: 
       - "vdatago:/workspace"
-      - "..:/share"
+      - "~:/share"
     networks:
       - app_net
 
