@@ -9,9 +9,10 @@ services:
     command: sleep infinity 
     volumes: 
       - "vdatago:/workspace"
+      - "..:/share"
     networks:
       - app_net
-  
+
 networks:
     app_net:
         external: true
