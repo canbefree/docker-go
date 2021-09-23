@@ -11,3 +11,4 @@ RUN  chmod -R 600 /root/.ssh
 
 RUN ldconfig
 
+RUN apt-get update 
