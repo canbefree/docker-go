@@ -1,37 +1,39 @@
-// For format details, see https://aka.ms/vscode-remote/devcontainer.json or the definition README at
-// https://github.com/microsoft/vscode-dev-containers/tree/master/containers/go
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.194.0/containers/go
 {
 	"name": "Go",
-	// "dockerFile": "Dockerfile",
+	"service": "docker-go",
 	"dockerComposeFile": "docker-compose.yml",
 	"workspaceFolder": "/workspace",
-	"service": "docker-go",
-	"runArgs": [
-		// Uncomment the next line to use a non-root user. See https://aka.ms/vscode-remote/containers/non-root-user.
-		// "-u", "1000",
-		"--cap-add=SYS_PTRACE",
-		"--security-opt",
-		"seccomp=unconfined"
-	],
-	// Uncomment the next line if you want to publish any ports.
+	"runArgs": [ "--cap-add=SYS_PTRACE", "--security-opt", "seccomp=unconfined" ],
 	"appPort": [
 		// "9200:8080"
 	],
-	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "go version",
-	// Uncomment the next line to use a non-root user. See https://aka.ms/vscode-remote/containers/non-root-user.
-	// "runArgs": [ "-u", "1000" ],
-	"extensions": [
-		"golang.Go"
-	],
+
+	// Set *default* container specific settings.json values on container create.
 	"settings": {
+		"go.toolsManagement.checkForUpdates": "local",
+		"go.useLanguageServer": true,
 		"go.gopath": "/go",
-		"terminal.integrated.shell.linux": "/bin/bash",
+		"go.goroot": "/usr/local/go",
 		"go.testFlags": [
 			"-count=1",
 			"-v"
 		],
 		"editor.formatOnSave": true
 	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"golang.Go"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "go version",
+
+	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
 }
